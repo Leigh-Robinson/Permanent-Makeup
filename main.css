@@ -36,7 +36,7 @@
   }
 
   h6 {
-    font-family: 'Playfair Display';
+    font-family: 'Playfair Display', serif;
     font-size: 14px;
     color: #fb90b1;
     margin: 0px 0px 9px;
@@ -47,6 +47,19 @@
     font-size: 20px;
     color: #5c656d;
     padding: 1rem;
+  }
+
+  blockquote {
+    font-family: 'lato', serif;
+    font-size: 20px;
+    color: #5c656d;
+    padding: 1rem;
+  }
+
+  cite {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #fb90b1;
   }
 
   ul, li {
@@ -68,7 +81,11 @@
     background-color: #f4f6f9;
   }
 
-  .section4 {
+  .section4 h2 {
+    text-align:center;
+  }
+
+  .section5 {
     text-align: center;
   }
 
@@ -192,3 +209,35 @@
     font-size: 24px;
     font-weight: bold;
   }
+
+  /*Reviews*/
+  .review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .review {
+    flex: 0 0 calc(33.33% - 20px); /* 33.33% for 3 items and minus 20px for the gap */
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 20px; /* space at the bottom */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+  }
+  
+  @media (max-width: 600px) {
+    .review {
+      flex: 0 0 100%; /* On screens smaller than 600px, switch to one column */
+    }
+  }  
+  /*Reviews End*/
+
+  /*Footer*/
+  footer {
+    padding: 2rem;
+    text-align: right;
+    font-family: 'lato', serif;
+    color: #5c656d;
+  }
+  /*Footer end*/
